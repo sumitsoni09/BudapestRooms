@@ -1,0 +1,25 @@
+{
+  "name": "budapestrooms",
+  "version": "1.0.0",
+  "description": "Demonstrating heroku hosting with express",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sumitsoni09/BudapestRooms.git"
+  },
+  "author": "S. Soni",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sumitsoni09/BudapestRooms/issues"
+  },
+  "homepage": "https://github.com/sumitsoni09/BudapestRooms#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "method-override": "^3.0.0",
+    "mongoose": "^5.3.2"
+  }
+}
