@@ -9,7 +9,7 @@
     <a href = "/budapest/new">Create Room</a>
     <ul>
     <% for(i = 0; i < rooms.length; i++) { %>
-      <li><%=rooms[i].name%></li>
+      <a href = "/budapest/<%=rooms[i].id%>"><li><%=rooms[i].name%></li>
     <%}%>
   </ul>
   </body>
