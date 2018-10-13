@@ -39,9 +39,9 @@ app.use(methodOverride('_method')); //allows POST, PUT, and DELETE from a form
 //localhost:3000 - this will reroute to 'products'
 
 //INDEX
-// app.get('/', (req, res)=>{
-//   res.send('Hello World')
-// })
+app.get('/', (req, res)=>{
+  res.redirect('/budapest')
+})
 app.get('/budapest', (req, res) => {
     res.render('index.ejs')
   });
