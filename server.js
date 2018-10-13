@@ -71,13 +71,13 @@ app.get('/budapest/:id', (req,res) => {
   });
 });
 //EDIT
-// app.get('/budapest/:id/edit', (req, res) => {
-//   Room.findById(req.params.id, (err, foundRoom) => {
-//     res.render('edit.ejs', {
-//       room:foundRoom
-//     });
-//   });
-// });
+app.get('/budapest/:id/edit', (req, res) => {
+  Room.findById(req.params.id, (err, foundRoom) => {
+    res.render('edit.ejs', {
+      room:foundRoom
+    });
+  });
+});
 // //UPDATE
 // app.put('/budapest/:id', (req, res)=>{
 //   Room.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updateModel)=>{
