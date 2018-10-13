@@ -40,52 +40,55 @@ app.use(methodOverride('_method')); //allows POST, PUT, and DELETE from a form
 //localhost:3000 - this will reroute to 'products'
 
 //INDEX
-app.get('/budapest', (req, res) => {
-  Room.find({}, (err, allRooms) => {
-    res.render('index.ejs', {
-      rooms:allRooms
-    })
-  })
-});
-
-//NEW
-app.get('/budapest/new', (req, res) => {
-  res.render('new.ejs')
+app.get('/', (req, res)=>{
+  res.send('Hello World')
 })
+// app.get('/budapest', (req, res) => {
+//   Room.find({}, (err, allRooms) => {
+//     res.render('index.ejs', {
+//       rooms:allRooms
+//     })
+//   })
+// });
 
-//CREATE
-app.post('/budapest', (req, res) => {
-  Room.create(req.body, (err, createdRoom) => {
-    res.redirect('/budapest');
-  })
-});
-//SHOW
-app.get('/budapest/:id', (req,res) => {
-  Room.findById(req.params.id, (err, foundRoom) => {
-    res.render('show.ejs',{
-      room: foundRoom
-    });
-  });
-});
-//EDIT
-app.get('/budapest/:id/edit', (req, res) => {
-  Room.findById(req.params.id, (err, foundRoom) => {
-    res.render('edit.ejs', {
-      room:foundRoom
-    });
-  });
-});
-//UPDATE
-app.put('/budapest/:id', (req, res)=>{
-  Room.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updateModel)=>{
-    res.redirect('/budapest')
-  });
-})
-//DELETE
-app.delete('/budapest/:id', (req, res)=>{
-  Room.findByIdAndRemove(req.params.id, (err, foundRoom)=>{
-    res.redirect('/budapest');
-  });
-});
+// //NEW
+// app.get('/budapest/new', (req, res) => {
+//   res.render('new.ejs')
+// })
+//
+// //CREATE
+// app.post('/budapest', (req, res) => {
+//   Room.create(req.body, (err, createdRoom) => {
+//     res.redirect('/budapest');
+//   })
+// });
+// //SHOW
+// app.get('/budapest/:id', (req,res) => {
+//   Room.findById(req.params.id, (err, foundRoom) => {
+//     res.render('show.ejs',{
+//       room: foundRoom
+//     });
+//   });
+// });
+// //EDIT
+// app.get('/budapest/:id/edit', (req, res) => {
+//   Room.findById(req.params.id, (err, foundRoom) => {
+//     res.render('edit.ejs', {
+//       room:foundRoom
+//     });
+//   });
+// });
+// //UPDATE
+// app.put('/budapest/:id', (req, res)=>{
+//   Room.findByIdAndUpdate(req.params.id, req.body, {new:true}, (err, updateModel)=>{
+//     res.redirect('/budapest')
+//   });
+// })
+// //DELETE
+// app.delete('/budapest/:id', (req, res)=>{
+//   Room.findByIdAndRemove(req.params.id, (err, foundRoom)=>{
+//     res.redirect('/budapest');
+//   });
+// });
 //listener
 app.listen(PORT, () => console.log('Welcome to BudapestRooms on port ', PORT));
