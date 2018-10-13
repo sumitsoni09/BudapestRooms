@@ -62,15 +62,15 @@ app.get('/budapest/new', (req, res) => {
   res.render('new.ejs')
 })
 //
-// //SHOW
-// app.get('/budapest/:id', (req,res) => {
-//   Room.findById(req.params.id, (err, foundRoom) => {
-//     res.render('show.ejs',{
-//       room: foundRoom
-//     });
-//   });
-// });
-// //EDIT
+//SHOW
+app.get('/budapest/:id', (req,res) => {
+  Room.findById(req.params.id, (err, foundRoom) => {
+    res.render('show.ejs',{
+      room: foundRoom
+    });
+  });
+});
+//EDIT
 // app.get('/budapest/:id/edit', (req, res) => {
 //   Room.findById(req.params.id, (err, foundRoom) => {
 //     res.render('edit.ejs', {
