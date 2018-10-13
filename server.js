@@ -43,7 +43,11 @@ app.get('/', (req, res)=>{
   res.redirect('/budapest')
 })
 app.get('/budapest', (req, res) => {
-    res.render('index.ejs')
+      Room.find({}, (err, allRooms)=>{
+        res.render('index.ejs', {
+          rooms:allRooms
+      })
+    })
   });
 
   //CREATE
