@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Edit <%=room.name%></h1>
+    <form action="/budapest/<%=room.id%>?_method=PUT" method="POST">
+      Room Name: <input type="text" name="name" />
+      Suite: <input type="text" name="suite" />
+      Price: <input type="number" min="50" name="price"/>
+      Furniture Type: <input type="text" name="furniture" placeholder="state your styles"/>
+        <input type="submit" value="Update Room"/>
+    </form>
+  </body>
+</html>
