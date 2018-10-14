@@ -3,7 +3,7 @@ const router = express.Router();
 const Room = require('../models/rooms.js');
 
 //INDEX
-app.get('/budapest', (req, res)=>{
+router.get('/budapest', (req, res)=>{
   app.redirect('/')
 })
 
