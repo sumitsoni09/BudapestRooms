@@ -5,11 +5,7 @@ const Room = require('../models/rooms.js');
 //INDEX
 
 router.get('/', (req, res) => {
-  Room.find({}, (err, allRooms)=>{
-    res.render('index.ejs', {
-      rooms: allRooms
-    })
-  })
+  res.send("Hello World")
 })
 
 // //SEED
