@@ -9,4 +9,6 @@ Oct. 13, 2018: modified the server a bit and got it to work on heroku, if you fo
 
 Oct. 14, 2018: Made controllers using router instead of app, and having an issue with heroku, keeps on giving me an error for cannot get /. I tried to change for having it redirect from the server to the router gave an error for server, then used app in the controller and gave an application error, So i am thinking that this will be as close to success for now until i can get everything up and running. 
 
+Oct. 14, 2018: Got app to work on Heroku with help from TA hours just needed to put my app.get('/', (req, res)...res.redirect('/budapest') route inside my server and not inside my controller. Going to work on the login page and styling! Will need to ask a few questions on how to get the Suite to match up with the price, EG: (Double = 50, Queen = 100, King = 300, Presidential = 1000, make a home = 300000) 
+
 link to the working app: https://budapestrooms.herokuapp.com/budapest
