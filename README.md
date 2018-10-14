@@ -7,4 +7,6 @@ Oct. 12, 2018: started to work on the database to finish using the CRUD method a
 
 Oct. 13, 2018: modified the server a bit and got it to work on heroku, if you follow my commits you will see the transitions. 
 
+Oct. 14, 2018: Made controllers using router instead of app, and having an issue with heroku, keeps on giving me an error for cannot get /. I tried to change for having it redirect from the server to the router gave an error for server, then used app in the controller and gave an application error, So i am thinking that this will be as close to success for now until i can get everything up and running. 
+
 link to the working app: https://budapestrooms.herokuapp.com/budapest
