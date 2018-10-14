@@ -7,7 +7,7 @@ router.get('/', (req, res)=>{
   app.redirect('/budapest')
 })
 
-router.get('/', (req, res) => {
+router.get('/budapest', (req, res) => {
       Room.find({}, (err, allRooms) => {
         res.render('index.ejs', {
           rooms:allRooms
