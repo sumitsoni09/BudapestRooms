@@ -21,7 +21,9 @@ const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost/' + 'Budapes
 //use roomController for routes
 const roomControllers = require('./controllers/rooms.js');
 app.use('/budapest', roomControllers);
-
+app.get('/', (req,res)=>{
+  res.redirect('/budapest')
+})
 //CONNECT TO MONGO
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
 
