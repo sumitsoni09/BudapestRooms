@@ -85,10 +85,10 @@ app.put('/budapest/:id', (req, res)=>{
   });
 })
 // //DELETE
-// app.delete('/budapest/:id', (req, res)=>{
-//   Room.findByIdAndRemove(req.params.id, (err, foundRoom)=>{
-//     res.redirect('/budapest');
-//   });
-// });
+app.delete('/budapest/:id', (req, res)=>{
+  Room.findByIdAndRemove(req.params.id, (err, foundRoom)=>{
+    res.redirect('/budapest');
+  });
+});
 //listener
 app.listen(PORT, () => console.log('Welcome to BudapestRooms on port ', PORT));
