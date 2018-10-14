@@ -3,11 +3,9 @@ const router = express.Router();
 const Room = require('../models/rooms.js');
 
 //INDEX
-router.get('/', (req,res)=>{
-  res.redirect('/budapest')
-})
+
 router.get('/', (req, res) => {
-        res.send('hello')
+        res.send('Hello')
       })
 
 // //SEED
