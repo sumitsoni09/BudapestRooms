@@ -3,6 +3,9 @@ const router = express.Router();
 const Room = require('../models/rooms.js');
 
 //INDEX
+app.get('/budapest', (req, res)=>{
+  app.redirect('/')
+})
 
 router.get('/', (req, res) => {
       Room.find({}, (err, allRooms) => {
