@@ -5,6 +5,7 @@ const roomSchema = new mongoose.Schema({
   suite: String,
   price: {type: Number, min: 50},
   furniture: [Array],
+  date: {type: Date},
 })
 
 const Room = mongoose.model('Room', roomSchema);

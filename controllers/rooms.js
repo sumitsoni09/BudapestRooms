@@ -25,13 +25,15 @@ router.get('/seed', (req, res) => {
       name: "Green Room",
       suite: "Presidential Suite",
       price: 1000,
-      furniture: ["Fully furnished", "Small kitchen"],
+      furniture: ["Fully furnished with a small kitchen"],
+
     },
     {
-      name: "Left Wing",
+      name: "Room 101",
       suite: "Home",
       price: 300000,
-      furniture: ["Fully furnished", "Grand kitchen"],
+      furniture: ["Grand Room with a theater room, and a chefs kitchen with "],
+
     }
   ], (err, data) => {
     res.redirect('/budapest');
