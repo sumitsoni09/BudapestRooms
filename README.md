@@ -11,4 +11,6 @@ Oct. 14, 2018: Made controllers using router instead of app, and having an issue
 
 Oct. 14, 2018: Got app to work on Heroku with help from TA hours just needed to put my app.get('/', (req, res)...res.redirect('/budapest') route inside my server and not inside my controller. Going to work on the login page and styling! Will need to ask a few questions on how to get the Suite to match up with the price, EG: (Double = 50, Queen = 100, King = 300, Presidential = 1000, make a home = 300000) 
 
+Oct, 15 2018: Worked on the login page needing some help with that and to get my style sheet up, Once that is done i will have a site ready and organized with a sign up page and a login page with images, will work on all that tomorrow, was just a busy/weird day for me to work on the project not much time had been given in like previous days. 
+
 link to the working app: https://budapestrooms.herokuapp.com/budapest
