@@ -2,16 +2,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title><%=room.name%> Edit</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link rel="stylesheet" href="/css/show.css">
   </head>
   <body>
-    <h1>Edit <%=room.name%></h1>
+    <p>Edit <%=room.name%></p>
     <form action="/budapest/<%=room.id%>?_method=PUT" method="POST">
-      <input type="text" name="image"/>
-      Furniture Type: <input type="text" name="furniture" placeholder="state your styles"/>
-      Date Coming: <input type="date" name="date"/><br/>
-        <input type="submit" value="Update Room"/>
+      <ul>
+      <li>Image: <input type="text" name="image"/></li>
+      <li>Furniture Type: <input type="text" name="furniture" placeholder="state your styles"/></li>
+      <li>Date Coming: <input type="date" name="date"/><br/></li>
+        <li><input class = "submit" type="submit" value="Update Room"/></li>
+      </ul>
     </form>
-    <a href = "/budapest"><button>Go Back</button></a>
+    <a href = "/budapest/<%=room.id%>"><button>Go Back</button></a>
+    <a href = "/budapest"><button>Go to Main</button>
   </body>
 </html>

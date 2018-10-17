@@ -3,20 +3,21 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+    <link rel="stylesheet" href="/css/show.css">
   </head>
   <body>
-    <h1>Create Room</h1>
+    <p>Create Room</p>
     <form action="/budapest" method="POST">
       <ul>
-        <li>
       <li>Room Name: <input type="text" name="name" /></li>
       <li>Suite: <input type="text" name="suite" /></li>
       <li>Price: <input type="number" min="50" name="price"/></li>
       <li>Furniture Type: <input type="text" name="furniture" placeholder="state your style"/></li>
       <li>When would you like to Check-in?: <input type="date" name="date"/></li>
-      <li>Image: <input type="text" name="image"/>
-  <input type="submit" value="Create Room"/>
+      <li>Image: <input type="text" name="image"/></li>
+  <input class= "submit" type="submit" value="Create Room"/>
 </form>
-    <a href = "/budapest"><button>Go Back</button></a>
+    <a href = "/budapest"><button>GO BACK</button></a>
   </body>
 </html>

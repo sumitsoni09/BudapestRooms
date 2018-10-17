@@ -16,24 +16,29 @@ router.get('/', (req, res) => {
 router.get('/seed', (req, res) => {
   Room.create([
     {
-      image: "https://rolandia.eu/wp-content/uploads/2016/03/Hotel-Transylvania-2-870x480.jpg",
+      image: "https://rookery-manor.co.uk/wp-content/uploads/2016/03/DSC_0730-HDR-Rookery-Groupon-Selects-WEB-QUALITY-1920x1282.jpg",
       name: "Red Room",
       suite: "Queen",
       price: 50,
       furniture: ["4K TV", "Fridge", "Queen size bed", "Full bath + shower", "Desk"],
+      author: "The Doctor",
     },
     {
+      image: "http://www.thebathpriory.co.uk/uploads/RoomImage/_name-67-6.jpg",
       name: "Green Room",
       suite: "Presidential Suite",
       price: 1000,
       furniture: ["Fully furnished with a small kitchen"],
+      author: "Darth Vador"
 
     },
     {
+      image: "https://www.fourseasons.com/content/dam/fourseasons/images/web/MAR/MAR_301_aspect16x9.jpg/jcr:content/renditions/cq5dam.web.720.405.jpeg",
       name: "Room 101",
       suite: "Home",
       price: 300000,
       furniture: ["Grand suite with 6 bedrooms with full baths, grand kitchen, and theater room"],
+      author: "Danny Targaryen"
 
     }
   ], (err, data) => {

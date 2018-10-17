@@ -2,21 +2,27 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title></title>
+    <title>Budapest Rooms</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+<link rel="stylesheet" href="/css/show.css">
   </head>
   <body>
-    <h1><%=room.name%></h1>
+    <p><%=room.name%></p>
+  <img src="<%=room.image%>">
     <ul>
-      <li>Image: <img src="<%=room.image%>"></li>
-      <li>Suite: <%=room.suite%></li>
-    <li>Price Paid: $<%=room.price%>/week</li>
-    <li>Furniture: <%=room.furniture%></li>
-    <li>Date to Check-In: <%=room.date%></li>
+    <li class = "suite">Suite: <%=room.suite%></li>
+    <li class = "price">Price Paid: $<%=room.price%>/week</li>
+    <li class = "furniture" >Furniture: <%=room.furniture%></li>
+    <li class = "date">Date to Check-In: <%=room.date%></li>
+    <li> Person Staying: <%=room.author%></li>
   </ul>
+  <form action="/budapest/<%=room.id%>?_method=DELETE" method="POST">
+    <input
+    class = "submit"
+    type="submit"  value="DELETE"/>
+  </form>
     <a href = "/budapest/<%=room.id%>/edit"><button>EDIT</button></a>
-    <form action="/budapest/<%=room.id%>?_method=DELETE" method="POST">
-      <input type="submit"  value="DELETE"/>
-    </form>
-    <a href = "/budapest"><button>Go Back</button></a>
+    <a href = "/budapest"><button>GO BACK</button></a>
+  </div>
   </body>
 </html>

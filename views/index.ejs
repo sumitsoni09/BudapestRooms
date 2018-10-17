@@ -2,7 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>BudapestRooms</title>
+    <title>Budapest Rooms</title>
     <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
@@ -12,9 +12,9 @@
     <div class = "container">
         <img src="http://img.mp.itc.cn/upload/20170630/14ca35c230fd4ee1b4892d8eac420afa_th.jpg">
     </div>
-    <a href = "/budapest/new"><button>Create Room</button></a>
     <div class = "links">
       <ul>
+        <a href = "/budapest/new"><button>Create Room</button></a>
         <% for(i = 0; i < rooms.length; i++) { %>
           <a class="links" href = "/budapest/<%=rooms[i].id%>"><li><%=rooms[i].name%></li>
           <%}%>

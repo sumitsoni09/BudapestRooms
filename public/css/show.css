@@ -1,0 +1,115 @@
+/* color palette from: https://www.color-hex.com/color-palette/30757 */
+body {
+  background-color: #ffd8ec;
+}
+
+img {
+  width: 30em;
+  height: auto;
+  display: flex;
+  margin: auto;
+  border: 10px solid;
+  border-top-color: #784283;
+  border-left-color: #784283;
+  border-right-color: #e5000c;
+  border-bottom-color: #e5000c;
+}
+
+li {
+  list-style: none;
+  margin: 12px auto;
+  text-align: center;
+  font-size: 20px;
+  text-align: center;
+}
+
+.suite {
+  color: #e5000c;
+}
+
+.price {
+  color: #784283;
+}
+
+.furniture {
+  color: #e5000c;
+}
+
+.date {
+color: #784283;
+}
+
+p {
+  background-color: black;
+  font-family: 'Monoton', cursive;
+  font-size: 5em;
+  word-spacing: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 10px;
+  margin: 0 0 20px 0;
+  color: #ffa8cb;
+  padding:
+}
+a {
+  text-decoration: none;
+}
+button {
+  border: 3px solid;
+  background-color: #784283;
+  border-top-color: #ddd690;
+  border-left-color: #ddd690;
+  border-right-color: #e5000c;
+  border-bottom-color: #e5000c;
+  border-radius: 10px;
+  color: #e5000c;
+  font-size: 20px;
+  outline: none;
+  display: flex;
+  flex: wrap;
+  margin: 10px auto;
+  text-align: center;
+  text-transform: uppercase;
+}
+button:hover{
+  color: #ffd8ec;
+  border-top-color: #e5000c;
+  border-left-color: #e5000c;
+  border-right-color: #ddd690;
+  border-bottom-color: #ddd690;
+}
+
+.submit {
+  border: 3px solid;
+  background-color: #784283;
+  border-top-color: #ddd690;
+  border-left-color: #ddd690;
+  border-right-color: #e5000c;
+  border-bottom-color: #e5000c;
+  border-radius: 10px;
+  color: #e5000c;
+  font-size: 20px;
+  outline: none;
+  text-align: center;
+  display: flex;
+  flex: wrap;
+  margin: 12px auto;
+  text-transform: uppercase;
+}
+
+.submit:hover {
+  color: #ffd8ec;
+  border-top-color: #e5000c;
+  border-left-color: #e5000c;
+  border-right-color: #ddd690;
+  border-bottom-color: #ddd690;
+}
+
+input {
+  background-color: #784283;
+  color: red;
+  font-size: 20px;
+}
+input::after {
+  background-color: grey;
+}
