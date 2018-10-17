@@ -1,6 +1,7 @@
 const mongoose = require('mongoose');
 
 const roomSchema = new mongoose.Schema({
+  image: {type: String},
   name: String,
   suite: String,
   price: {type: Number, min: 50},

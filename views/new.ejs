@@ -7,13 +7,16 @@
   <body>
     <h1>Create Room</h1>
     <form action="/budapest" method="POST">
-    Room Name: <input type="text" name="name" /><br/>
-    Suite: <input type="text" name="suite" /><br/>
-    Price: <input type="number" min="50" name="price"/><br/>
-    Furniture Type: <input type="text" name="furniture" placeholder="state your style"/><br/>
-    When would you like to Check-in?: <input type="date" name="date"/><br/>
-      <input type="submit" value="Create Room"/>
-    </form>
+      <ul>
+        <li>
+      <li>Room Name: <input type="text" name="name" /></li>
+      <li>Suite: <input type="text" name="suite" /></li>
+      <li>Price: <input type="number" min="50" name="price"/></li>
+      <li>Furniture Type: <input type="text" name="furniture" placeholder="state your style"/></li>
+      <li>When would you like to Check-in?: <input type="date" name="date"/></li>
+      <li>Image: <input type="text" name="image"/>
+  <input type="submit" value="Create Room"/>
+</form>
     <a href = "/budapest"><button>Go Back</button></a>
   </body>
 </html>

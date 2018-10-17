@@ -7,9 +7,7 @@
   <body>
     <h1>Edit <%=room.name%></h1>
     <form action="/budapest/<%=room.id%>?_method=PUT" method="POST">
-      Room Name: <input type="text" name="name" />
-      Suite: <input type="text" name="suite" />
-      Price: <input type="number" min="50" name="price"/>
+      <input type="text" name="image"/>
       Furniture Type: <input type="text" name="furniture" placeholder="state your styles"/>
       Date Coming: <input type="date" name="date"/><br/>
         <input type="submit" value="Update Room"/>

@@ -16,6 +16,7 @@ router.get('/', (req, res) => {
 router.get('/seed', (req, res) => {
   Room.create([
     {
+      image: "https://rolandia.eu/wp-content/uploads/2016/03/Hotel-Transylvania-2-870x480.jpg",
       name: "Red Room",
       suite: "Queen",
       price: 50,
@@ -32,7 +33,7 @@ router.get('/seed', (req, res) => {
       name: "Room 101",
       suite: "Home",
       price: 300000,
-      furniture: ["Grand Room with a theater room, and a chefs kitchen with "],
+      furniture: ["Grand suite with 6 bedrooms with full baths, grand kitchen, and theater room"],
 
     }
   ], (err, data) => {

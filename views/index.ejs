@@ -3,20 +3,22 @@
   <head>
     <meta charset="utf-8">
     <title>BudapestRooms</title>
+    <link href="https://fonts.googleapis.com/css?family=Monoton" rel="stylesheet">
+
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <h1>Budapest Room Creator</h1>
+    <p>Budapest Room Creator</p>
     <div class = "container">
         <img src="http://img.mp.itc.cn/upload/20170630/14ca35c230fd4ee1b4892d8eac420afa_th.jpg">
     </div>
-      <div class = "links">
-    <a href = "/budapest/new">Create Room</a>
-    <ul>
-    <% for(i = 0; i < rooms.length; i++) { %>
-      <a href = "/budapest/<%=rooms[i].id%>"><li><%=rooms[i].name%></li>
-    <%}%>
-  </ul>
-</div>
+    <a href = "/budapest/new"><button>Create Room</button></a>
+    <div class = "links">
+      <ul>
+        <% for(i = 0; i < rooms.length; i++) { %>
+          <a class="links" href = "/budapest/<%=rooms[i].id%>"><li><%=rooms[i].name%></li>
+          <%}%>
+      </ul>
+    </div>
   </body>
 </html>

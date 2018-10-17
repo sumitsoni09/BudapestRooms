@@ -29,7 +29,7 @@ app.use('/budapest', roomControllers);
 
 //Get Index
 app.get('/', (req,res)=>{
-  res.redirect('/budapest/seed')
+  res.redirect('/budapest')
 })
 
 
