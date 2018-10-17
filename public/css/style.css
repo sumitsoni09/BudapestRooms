@@ -1,3 +1,27 @@
 body {
-  background-color: blue,
+  background-color: #ffa8cb;
+  color: white;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+img {
+  width: 40em;
+  height: auto;
+  display: flex;
+  margin: auto;
+  border: 10px solid;
+  color: rgba(80, 90, 200, 1)
+}
+
+li {
+  list-style: none;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
