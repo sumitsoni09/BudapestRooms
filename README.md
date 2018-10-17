@@ -13,4 +13,6 @@ Oct. 14, 2018: Got app to work on Heroku with help from TA hours just needed to 
 
 Oct, 15 2018: Worked on the login page needing some help with that and to get my style sheet up, Once that is done i will have a site ready and organized with a sign up page and a login page with images, will work on all that tomorrow, was just a busy/weird day for me to work on the project not much time had been given in like previous days. 
 
-link to the working app: https://budapestrooms.herokuapp.com/budapest
+Oct. 16, 2018: worked on the css for all webpages, and added a few more features for the show page which includes a picture, room name, creator of the room, date they will be coming to stay, and what type of style they like. Pretty much done but would like someone to see the style if its ok or needed to be changed, Will try to get a login page up by tomorrow hopefully.  
+
+Link to the working app: https://budapestrooms.herokuapp.com/budapest
