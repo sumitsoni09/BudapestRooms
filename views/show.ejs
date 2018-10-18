@@ -10,19 +10,19 @@
     <p><%=room.name%></p>
   <img src="<%=room.image%>">
     <ul>
-    <li class = "suite">Suite: <%=room.suite%></li>
-    <li class = "price">Price Paid: $<%=room.price%>/week</li>
-    <li class = "furniture" >Furniture: <%=room.furniture%></li>
-    <li class = "date">Date to Check-In: <%=room.date%></li>
-    <li> Person Staying: <%=room.author%></li>
+      <li class = "suite">Suite: <%=room.suite%></li>
+      <li class = "price">Price Paid: $<%=room.price%>/week</li>
+      <li class = "furniture" >Furniture: <%=room.furniture%></li>
+      <li class = "in">Date to Check-In: <%=room.inDate%></li>
+      <li class = "out">Date to Check-Out: <%=room.outDate%></li>
+      <li class = "author"> Person Staying: <%=room.author%></li>
   </ul>
-  <form action="/budapest/<%=room.id%>?_method=DELETE" method="POST">
-    <input
-    class = "submit"
-    type="submit"  value="DELETE"/>
-  </form>
-    <a href = "/budapest/<%=room.id%>/edit"><button>EDIT</button></a>
-    <a href = "/budapest"><button>GO BACK</button></a>
-  </div>
+    <div class="links">
+      <form action="/budapest/<%=room.id%>?_method=DELETE" method="POST">
+        <input class = "submit" type="submit" value="DELETE"/>
+    </form>
+      <a href = "/budapest/<%=room.id%>/edit"><button>EDIT</button></a>
+      <a href = "/budapest"><button>GO BACK</button></a>
+    </div>
   </body>
 </html>

@@ -17,10 +17,9 @@ img {
 
 li {
   list-style: none;
-  margin: 12px auto;
+  margin: 10px auto;
   text-align: center;
   font-size: 20px;
-  text-align: center;
 }
 
 .suite {
@@ -35,8 +34,16 @@ li {
   color: #e5000c;
 }
 
-.date {
+.in {
 color: #784283;
+}
+
+.out {
+  color: #e5000c;
+}
+
+.author {
+  color: #784283;
 }
 
 p {
@@ -49,11 +56,14 @@ p {
   letter-spacing: 10px;
   margin: 0 0 20px 0;
   color: #ffa8cb;
-  padding:
 }
+
+
 a {
   text-decoration: none;
+  width: 10em;
 }
+
 button {
   border: 3px solid;
   background-color: #784283;
@@ -61,23 +71,35 @@ button {
   border-left-color: #ddd690;
   border-right-color: #e5000c;
   border-bottom-color: #e5000c;
-  border-radius: 10px;
   color: #e5000c;
   font-size: 20px;
   outline: none;
-  display: flex;
-  flex: wrap;
+  border-radius: 10px;
+  width: 10em;
   margin: 10px auto;
-  text-align: center;
   text-transform: uppercase;
+  text-align: center;
 }
+
 button:hover{
   color: #ffd8ec;
   border-top-color: #e5000c;
   border-left-color: #e5000c;
   border-right-color: #ddd690;
   border-bottom-color: #ddd690;
+  cursor: pointer;
 }
+
+.links {
+  display: flex;
+  flex-wrap: wrap;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 10em;
+  text-align: center;
+  margin: auto;
+}
+
 
 .submit {
   border: 3px solid;
@@ -90,11 +112,10 @@ button:hover{
   color: #e5000c;
   font-size: 20px;
   outline: none;
-  text-align: center;
-  display: flex;
-  flex: wrap;
   margin: 12px auto;
   text-transform: uppercase;
+  width: 10em;
+  text-align: center;
 }
 
 .submit:hover {
@@ -108,8 +129,74 @@ button:hover{
 input {
   background-color: #784283;
   color: red;
+  font-size: 15px;
+  margin: auto;
+  width: 15em;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  border: 3px solid;
+  border-color: rgba(0, 120, 200, .8);
+  border-radius: 10px;
+  text-decoration: none;
+  width: 20em;
+  margin: auto;
+  text-align: center;
+}
+
+.create {
+  border: 3px solid;
+  background-color: #784283;
+  border-top-color: #ddd690;
+  border-left-color: #ddd690;
+  border-right-color: #e5000c;
+  border-bottom-color: #e5000c;
+  border-radius: 10px;
+  color: #e5000c;
   font-size: 20px;
+  outline: none;
+  text-transform: uppercase;
+  margin: 10px 37.5em;
+  width: 10em;
+  text-align: center;
 }
-input::after {
-  background-color: grey;
+
+.create:hover {
+  color: #ffd8ec;
+  border-top-color: #e5000c;
+  border-left-color: #e5000c;
+  border-right-color: #ddd690;
+  border-bottom-color: #ddd690;
 }
+
+/* a {
+text-decoration: none;
+width: 10em;
+} */
+/* button {
+border: 3px solid;
+background-color: #784283;
+border-top-color: #ddd690;
+border-left-color: #ddd690;
+border-right-color: #e5000c;
+border-bottom-color: #e5000c;
+border-radius: 10px;
+color: #e5000c;
+font-size: 20px;
+outline: none;
+display: flex;
+flex: wrap;
+margin: 10px auto;
+text-transform: uppercase;
+width: 10em;
+}
+
+button:hover{
+color: #ffd8ec;
+border-top-color: #e5000c;
+border-left-color: #e5000c;
+border-right-color: #ddd690;
+border-bottom-color: #ddd690;
+} */

@@ -15,4 +15,12 @@ Oct, 15 2018: Worked on the login page needing some help with that and to get my
 
 Oct. 16, 2018: worked on the css for all webpages, and added a few more features for the show page which includes a picture, room name, creator of the room, date they will be coming to stay, and what type of style they like. Pretty much done but would like someone to see the style if its ok or needed to be changed, Will try to get a login page up by tomorrow hopefully.  
 
+Oct 17, 2018 put in Date to check in and check out but not working in the seed, missed TA hours to get that fixed from personal issues with the network so tried to work on my own but couldn't figure out on how to fix that. Updated on the style of the app and feel like that it shows what it needed to for now.
+
+Unsolved Problems:
+1) Getting dates to show up from seed
+2) tried to align the box for create more centered but don't know why its not moving anymore
+3) making a drop down box for the room suite where it would show King, Queen, Double, or Presidential and have a fixed price.
+4) Tried to make the format really simple and straight forward but wanted to add a login/signup page but made things more complex so kind of left it and was not up for the challenge. 
+
 Link to the working app: https://budapestrooms.herokuapp.com/budapest

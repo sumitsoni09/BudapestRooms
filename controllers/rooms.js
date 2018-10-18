@@ -20,6 +20,8 @@ router.get('/seed', (req, res) => {
       name: "Red Room",
       suite: "Queen",
       price: 50,
+      // inDate: 
+      // outDate:
       furniture: ["4K TV", "Fridge", "Queen size bed", "Full bath + shower", "Desk"],
       author: "The Doctor",
     },
@@ -28,8 +30,10 @@ router.get('/seed', (req, res) => {
       name: "Green Room",
       suite: "Presidential Suite",
       price: 1000,
+      // inDate:
+      // outDate:
       furniture: ["Fully furnished with a small kitchen"],
-      author: "Darth Vador"
+      author: "Darth Vador",
 
     },
     {
@@ -37,8 +41,10 @@ router.get('/seed', (req, res) => {
       name: "Room 101",
       suite: "Home",
       price: 300000,
+      // inDate:
+      // outDate:
       furniture: ["Grand suite with 6 bedrooms with full baths, grand kitchen, and theater room"],
-      author: "Danny Targaryen"
+      author: "Danny Targaryen",
 
     }
   ], (err, data) => {

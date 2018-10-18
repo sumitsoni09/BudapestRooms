@@ -8,17 +8,23 @@
   </head>
   <body>
     <p>Create Room</p>
-    <form action="/budapest" method="POST">
-      <ul>
+<form action="/budapest" method="POST">
+  <div class = "inputs">
+    <ul>
       <li>Room Name: <input type="text" name="name" /></li>
       <li>Suite: <input type="text" name="suite" /></li>
       <li>Price: <input type="number" min="50" name="price"/></li>
       <li>Furniture Type: <input type="text" name="furniture" placeholder="state your style"/></li>
-      <li>When would you like to Check-in?: <input type="date" name="date"/></li>
+      <li>Check-in: <input type="date" name="inDate"/></li>
+      <li>Check-out: <input type="date" name="outDate"/></li>
       <li>Image: <input type="text" name="image"/></li>
       <li>Name of Guest: <input type = "text" name="author"/></li>
-  <input class= "submit" type="submit" value="Create Room"/>
-</form>
+    </ul>
+  </div>
+      <input class= "create" type="submit" value="Create Room"/>
+    </form>
+  <div class="links">
     <a href = "/budapest"><button>GO BACK</button></a>
+  </div>
   </body>
 </html>

@@ -6,7 +6,8 @@ const roomSchema = new mongoose.Schema({
   suite: String,
   price: {type: Number, min: 50},
   furniture: [Array],
-  date: {type: Date},
+  inDate: {type: Date},
+  outDate: {type: Date},
   author: String,
 })
 

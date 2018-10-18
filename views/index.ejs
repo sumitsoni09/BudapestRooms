@@ -12,13 +12,13 @@
     <div class = "container">
         <img src="http://img.mp.itc.cn/upload/20170630/14ca35c230fd4ee1b4892d8eac420afa_th.jpg">
     </div>
-    <div class = "links">
       <ul>
+        <div class = "links">
         <a href = "/budapest/new"><button>Create Room</button></a>
         <% for(i = 0; i < rooms.length; i++) { %>
           <a class="links" href = "/budapest/<%=rooms[i].id%>"><li><%=rooms[i].name%></li>
           <%}%>
+        </div>
       </ul>
-    </div>
   </body>
 </html>

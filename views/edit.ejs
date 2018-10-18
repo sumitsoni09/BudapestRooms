@@ -8,15 +8,22 @@
   </head>
   <body>
     <p>Edit <%=room.name%></p>
-    <form action="/budapest/<%=room.id%>?_method=PUT" method="POST">
-      <ul>
-      <li>Image: <input type="text" name="image"/></li>
-      <li>Furniture Type: <input type="text" name="furniture" placeholder="state your styles"/></li>
-      <li>Date Coming: <input type="date" name="date"/><br/></li>
+
+  <form action="/budapest/<%=room.id%>?_method=PUT" method="POST">
+    <ul>
+      <div class = "inputs">
+        <li>Image: <input type="text" name="image"/></li>
+        <li>Furniture Type: <input type="text" name="furniture" placeholder="state your styles"/></li>
+        <li>Date Coming: <input type="date" name="inDate"/><br/></li>
+        <li>Date Leaving: <input type="date" name="outDate"/><br/></li>
+      </div>
+      <div class="links">
         <li><input class = "submit" type="submit" value="Update Room"/></li>
-      </ul>
-    </form>
-    <a href = "/budapest/<%=room.id%>"><button>Go Back</button></a>
-    <a href = "/budapest"><button>Go to Main</button>
+        <a href = "/budapest/<%=room.id%>"><button>Go Back</button></a>
+        <a href = "/budapest"><button>Go to Main</button>
+      </div>
+    </ul>
+  </form>
+
   </body>
 </html>
