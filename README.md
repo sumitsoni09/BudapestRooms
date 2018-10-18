@@ -21,6 +21,6 @@ Unsolved Problems:
 1) Getting dates to show up from seed
 2) tried to align the box for create more centered but don't know why its not moving anymore
 3) making a drop down box for the room suite where it would show King, Queen, Double, or Presidential and have a fixed price.
-4) Tried to make the format really simple and straight forward but wanted to add a login/signup page but made things more complex so kind of left it and was not up for the challenge. 
+4) Tried to make the format really simple and straight forward but wanted to add a login/signup page but made things more complex so kind of left it and was not up for the challenge to work for the last two days. 
 
 Link to the working app: https://budapestrooms.herokuapp.com/budapest
